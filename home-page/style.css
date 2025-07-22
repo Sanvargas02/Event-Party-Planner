@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
-    margin: 0;
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #1E90FF, #9B30FF);
   color: #fff;
@@ -7,59 +9,61 @@ body {
   overflow-x: hidden;
 }
 
-h1 {
+header {
   text-align: center;
-  color: #222;
-  margin-top: 20px;
+  padding: 80px 20px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
 }
 
-h2 {
-  margin-left: 20px;
-  color: #444;
+header h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #1E90FF, 0 0 20px #9B30FF;
 }
 
-section {
+.button {
+  display: inline-block;
+  background: #fff;
+  color: #1E90FF;
+  padding: 15px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #9B30FF;
+}
+
+.button:hover {
+  background: #9B30FF;
+  color: #fff;
+  box-shadow: 0 0 20px #ffffff;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px;
   padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ffffff66;
 }
 
-li {
-  background-color: white;
-  margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+h2, h3 {
+  text-align: center;
+  text-shadow: 0 0 5px #00000099;
 }
 
-li h3 {
-  margin-top: 0;
-  color: #007bff;
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00000044;
+  font-size: 0.9rem;
+  color: #ddd;
 }
 
-li p {
-  margin: 5px 0;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 8px 14px;
-  margin: 5px 5px 0 0;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-div > a > button {
-  display: block;
-  margin: 30px auto;
-  font-size: 16px;
-}
