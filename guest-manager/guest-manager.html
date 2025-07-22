@@ -9,7 +9,80 @@
 
 <body>
     <h1>Guest Manager</h1>
-    <p>Manage your event guests efficiently.</p>
+
+    <section>
+        <h3>
+            Event Name: <span>Event name</span>
+        </h3>
+        <h3>
+            Total invited guests: <span>20</span> / <span>Responses: 15</span>
+        </h3>
+
+    </section>
+
+    <section>
+        <h2>Add new Guest</h2>
+        <form>
+            <label for="guest-name">Guest Name:</label>
+            <input type="text" id="guest-name" name="guest-name" required>
+
+            <label for="guest-email">Guest Email:</label>
+            <input type="email" id="guest-email" name="guest-email" required>
+
+            <label for="guest-phone">Guest Phone:</label>
+            <input type="tel" id="guest-phone" name="guest-phone">
+
+            <button type="submit">Add Guest</button>
+            <button>Send Invitation Text</button>
+    </section>
+
+    <section>
+        <h2>RSVP summary</h2>
+
+        <h3>going: <span>12</span></h3>
+        <h3>maybe: <span>3</span></h3>
+        <h3>pending: <span>5</span></h3>
+        <h3>not going: <span>0</span></h3>
+
+        Progress bar: <progress value="12" max="20"></progress>
+
+    </section>
+
+    <section>
+        <h2>Guest List</h2>
+        <ul>
+            <li>
+                <h3>Guest Name</h3>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: guest@example.com</p>
+                <p> RSVP Status: <span>Going (March 18)</span></p>
+                <button>Edit</button>
+                <button>Remove</button>
+                <button>Change Status</button>
+            </li>
+
+            <li>
+                <h3>Guest Name</h3>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: guest@example.com</p>
+                <p> RSVP Status: <span>Going (March 18)</span></p>
+                <button>Edit</button>
+                <button>Remove</button>
+                <button>Change Status</button>
+            </li>
+
+
+            <li>
+                <h3>Guest Name</h3>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: guest@example.com</p>
+                <p> RSVP Status: <span>Going (March 18)</span></p>
+                <button>Edit</button>
+                <button>Remove</button>
+                <button>Change Status</button>
+            </li>
+        </ul>
+    </section>
 
 </body>
 
