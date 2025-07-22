@@ -16,13 +16,11 @@
         <h3>
             Event Name:
             <select id="event-select" name="event-select">
-                <option value="event1">Sarah's Birthday</option>
-                <option value="event2">Brath's Birthday</option>
-                <option value="event3">Matha's Birthday</option>
+                <!-- Opciones generadas dinámicamente -->
             </select>
         </h3>
         <h3>
-            Total invited guests: <span>20</span> / <span>Responses: 15</span>
+            Total invited guests: <span>20</span> total / <span>15</span> confirmed
         </h3>
 
     </section>
@@ -55,7 +53,7 @@
         </a>
     </section>
 
-    <section>
+    <section id="rsvp-summary-section">
         <h2>RSVP Summary</h2>
 
         <h3>Going: <span>12</span></h3>
@@ -63,11 +61,11 @@
         <h3>Pending: <span>5</span></h3>
         <h3>Not going: <span>0</span></h3>
 
-        <progress value="12" max="20"></progress> <span>75% responded</span>
+        <progress value="12" max="20"></progress>
 
     </section>
 
-    <section>
+    <section id="guest-list-section">
         <h2>Guest List</h2>
         <div>
             <select>
@@ -81,16 +79,8 @@
             <input type="text" placeholder="search..."/>
         </div>
         
-        <ul>
-            <li>
-                <h3>Guest Name</h3>
-                <p>Phone: 123-456-7890</p>
-                <p>Email: guest@example.com</p>
-                <p>RSVP Status: <span>Going</span></p>
-                <button>Edit</button>
-                <button>Remove</button>
-                <button>Change Status</button>
-            </li>
+        <ul id="guest-list-ul">
+            <!-- Invitados generados dinámicamente -->
         </ul>
     </section>
 
