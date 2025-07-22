@@ -1,8 +1,10 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1E90FF, #9B30FF);
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
