@@ -8,8 +8,42 @@
 </head>
 
 <body>
-    <h1>Create Event</h1>
-    <p>Fill in the details below to create a new event.</p>
+    <h1>Create new Event</h1>
+
+    <section>
+        <form>
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" required>
+
+            <label for="event-type">Event Type:</label>
+            <select id="event-type" name="event-type" required>
+                <option value="">Select an event type</option>
+                <option value="birthday">Birthday</option>
+                <option value="study-group">Study Group</option>
+                <option value="social-gathering">Social Gathering</option>
+                <option value="graduation">Graduation</option>
+                <option value="game-night">Game Night</option>
+            </select>
+
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date" required>
+
+            <label for="event-location">Event Location:</label>
+            <input type="text" id="event-location" name="event-location" required>
+
+
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" rows="4"
+                placeholder="Enter a brief description of the event"></textarea>
+
+            <label for="max-guests">Max Guests:</label>
+            <input type="number" id="max-guests" name="max-guests">
+            <p>(optional)</p>
+
+            <button type="submit">Create Event</button>
+            <button>Cancel</button>
+        </form>
+    </section>
 </body>
 
 </html>
