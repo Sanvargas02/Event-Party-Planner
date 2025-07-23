@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const daysLeft = calculateDaysLeft(event.date);
             
             const li = document.createElement('li');
+            li.classList.add('event-card');
             li.innerHTML = `
                 <h3>${event.name}</h3>
                 <p>${event.date} ${event.time}</p>

@@ -50,12 +50,47 @@ h1 {
 .event-card {
   background: rgba(255, 255, 255, 0.1);
   margin: 20px;
-  padding: 20px;
+  
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease;
-  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
+
+.event-card h3 {
+    margin-bottom: 10px;
+  }
+
+  .event-card p {
+    margin: 6px 0;
+  }
+
+  .event-card div {
+    margin-top: 12px;
+  }
+
+  .event-card button {
+    padding: 10px 20px;
+  }
+
+  
+
+  .event-card button {
+    margin-right: 0;
+    background-color: #a7ff3c;
+    border-radius: 10px;
+
+  }
+
+.event-card button:hover {
+    background-color: #42a410;
+    color: #fff;
+  }
 
 .event-card:hover {
   transform: scale(1.05);
