@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edit Event</title>
+    <link rel="stylesheet" href="event-edit.css" />
     <script src="../js/event-edit.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Edit Event</h1>
 
     <section>
-        <form id="edit-event-form">
-            <label for="event-name">Event Name:</label>
-            <input type="text" id="event-name" name="event-name" required>
+      <form id="edit-event-form">
+        <label for="event-name">Event Name:</label>
+        <input type="text" id="event-name" name="event-name" required />
 
-            <label for="event-type">Event Type:</label>
-            <select id="event-type" name="event-type" required>
-                <option value="">Select an event type</option>
-                <option value="birthday">Birthday</option>
-                <option value="study-group">Study Group</option>
-                <option value="social-gathering">Social Gathering</option>
-                <option value="graduation">Graduation</option>
-                <option value="game-night">Game Night</option>
-            </select>
+        <label for="event-type">Event Type:</label>
+        <select id="event-type" name="event-type" required>
+          <option value="">Select an event type</option>
+          <option value="birthday">Birthday</option>
+          <option value="study-group">Study Group</option>
+          <option value="social-gathering">Social Gathering</option>
+          <option value="graduation">Graduation</option>
+          <option value="game-night">Game Night</option>
+        </select>
 
-            <label for="event-date">Event Date:</label>
-            <input type="date" id="event-date" name="event-date" required>
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event-date" required />
 
-            <label for="event-time">Event Time:</label>
-            <input type="time" id="event-time" name="event-time" required>
+        <label for="event-time">Event Time:</label>
+        <input type="time" id="event-time" name="event-time" required />
 
-            <label for="event-location">Event Location:</label>
-            <input type="text" id="event-location" name="event-location" required>
+        <label for="event-location">Event Location:</label>
+        <input type="text" id="event-location" name="event-location" required />
 
-            <label for="event-description">Event Description:</label>
-            <textarea id="event-description" name="event-description" rows="4"
-                placeholder="Enter a brief description of the event" required></textarea>
+        <label for="event-description">Event Description:</label>
+        <textarea
+          id="event-description"
+          name="event-description"
+          rows="4"
+          placeholder="Enter a brief description of the event"
+          required
+        ></textarea>
 
-            <label for="max-guests">Max Guests:</label>
-            <input type="number" id="max-guests" name="max-guests">
-            <p>(optional)</p>
+        <label for="max-guests">Max Guests:</label>
+        <input type="number" id="max-guests" name="max-guests" />
+        <p>(optional)</p>
 
-            <button type="submit">Save Changes</button>
-            <a href="../home-page/index.html">
-                <button type="button">Cancel</button>
-            </a>
-        </form>
+        <button type="submit">Save Changes</button>
+        <a href="../home-page/index.html">
+          <button type="button">Cancel</button>
+        </a>
+      </form>
     </section>
-</body>
-
+  </body>
 </html>
